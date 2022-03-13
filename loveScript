@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>LoveU</title>
+    <style type="text/css" media="all">
+*{
+      padding: 0;
+      margin: 0;
+      font-family: Comic Sans MS;
+      --bglove :url("https://www.freeiconspng.com/uploads/love-png-26.png");
+    }
+body
+{
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #f6aed2;
+}
+.love {
+  margin : auto;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2em;
+  position: absolute;
+  left:180px;
+  top: 600px;
+  z-index: 2;
+}
+.lv1{
+  width: 70px;
+  height: 70px;
+}
+.blink {
+  visibility: hidden;
+}
+.lv2{
+  transform: scale(13);
+}
+
+#ilu{
+  font-size: 90px;
+  font-weight: 500;
+  text-align:justify;
+  transform: translateY(260px);
+  transition: 1s;
+  opacity: 0;
+  text-shadow: 3px 3px 10px white;
+}
+span:nth-child(1) {
+  position: absolute;
+  left: 410px;
+  top:650px;
+  width : 50px;
+  height: 44px;
+  background-image:var(--bglove);
+  background-size: cover;
+  animation: go1 2s infinite;
+  transition: 2s;
+  transition-delay: 1.5s;
+}
+span:nth-child(2) {
+  position: absolute;
+  left: 470px;
+  top:700px;
+  width : 50px;
+  height: 44px;
+  background-image: var(--bglove);
+  background-size: cover;
+  animation: go2 5s infinite;
+  transition: 2s;
+  transition-delay: 1.5s;
+}
+span:nth-child(3) {
+  position: absolute;
+  left: 500px;
+  top:600px;
+  width : 50px;
+  height: 44px;
+  background-image: var(--bglove);
+  background-size: cover;
+  animation: go3 2s linear infinite;
+  transition: 2s;
+  transition-delay: 1.5s;
+}
+span:nth-child(4) {
+  position: absolute;
+  left: 500px;
+  top:650px;
+  width : 50px;
+  height: 44px;
+  background-image: var(--bglove);
+  background-size: cover;
+  animation: go4 2s linear infinite;
+  transition: 2s;
+  transition-delay: 1.5s;
+}
+span:nth-child(5) {
+  position: absolute;
+  left: 500px;
+  top:600px;
+  width : 50px;
+  height: 44px;
+  background-image: var(--bglove);
+  background-size: cover;
+  animation: go5 2.5s linear infinite;
+  transition: 2s;
+  transition-delay: 1.5s;
+}
+span:nth-child(6) {
+  position: absolute;
+  left: 500px;
+  top:650px;
+  width : 50px;
+  height: 44px;
+  background-image: var(--bglove);
+  background-size: cover;
+  animation: go6 4s linear infinite;
+  transition: 2s;
+  transition-delay: 1.5s;
+}
+span:nth-child(7) {
+  position: absolute;
+  left: 500px;
+  top:650px;
+  width : 50px;
+  height: 44px;
+  background-image:var(--bglove);
+  background-size: cover;
+  animation: go7 2s linear infinite;
+  transition: 3s;
+  transition-delay: 1.5s;
+}
+span:nth-child(8) {
+  position: absolute;
+  left: 500px;
+  top:650px;
+  width : 50px;
+  height: 44px;
+  background-image: var(--bglove);
+  background-size: cover;
+  animation: go8 3s linear infinite;
+  transition: 2s;
+  transition-delay: 1.5s;
+}
+span:nth-child(9) {
+  position: absolute;
+  left: 500px;
+  top:650px;
+  width : 50px;
+  height: 44px;
+  background-image: var(--bglove);
+  background-size: cover;
+  animation: go8 3s linear infinite;
+  transition: 2s;
+  transition-delay: 1.5s;
+}
+span:nth-child(10) {
+  position: absolute;
+  left: 500px;
+  top:650px;
+  width : 50px;
+  height: 44px;
+  background-image: var(--bglove);
+  background-size: cover;
+  animation: go10 3.5s linear infinite;
+  transition: 2s;
+  transition-delay: 1.5s;
+}
+span:nth-child(11) {
+  position: absolute;
+  left: 500px;
+  top:650px;
+  width : 50px;
+  height: 44px;
+  background-image: var(--bglove);
+  background-size: cover;
+  animation: go11 3s linear infinite;
+  transition: 2s;
+  transition-delay: 1.5s;
+}
+span:nth-child(12) {
+  position: absolute;
+  left: 500px;
+  top:650px;
+  width : 50px;
+  height: 44px;
+  background-image: var(--bglove);
+  background-size: cover;
+  animation: go12 5s linear infinite;
+  transition: 2s;
+  transition-delay: 1.5s;
+}
+
+
+@keyframes go1{
+  60%{
+    opacity: 0.8;
+  }
+  100%{
+    transform: rotate(360deg) scale(2.6);
+    left:70px;
+    top: 400px;
+    opacity: 0;
+  }
+}
+
+@keyframes go2{
+  60%{
+    opacity: 0.8;
+  }
+  100%{
+    transform: rotate(360deg) scale(1);
+    left:600px;
+    top: 100px;
+    opacity: 0;
+  }
+}
+
+@keyframes go3{
+  60%{
+    opacity: 0.7;
+  }
+  80%{
+    transform: rotate(360deg) scale(1.5);
+    left:900px;
+    top: 800px;
+    opacity: 0;
+  }
+  100%{
+    opacity:0;
+  }
+}
+@keyframes go4{
+  60%{
+    opacity: 0.7;
+  }
+  80%{
+    transform: rotate(360deg) scale(0.5);
+    left:900px;
+    top: 800px;
+    opacity: 0;
+  }
+  100%{
+    opacity:0;
+  }
+}
+@keyframes go5{
+  60%{
+    opacity: 0.7;
+  }
+  80%{
+    transform: rotate(360deg) scale(3.5);
+    left:800px;
+    top: 200px;
+    opacity: 0;
+  }
+  100%{
+    opacity:0;
+  }
+}
+@keyframes go6{
+  60%{
+    opacity: 0.7;
+  }
+  80%{
+    transform: rotate(360deg) scale(1.5);
+    left:200px;
+    top: 80px;
+    opacity: 0;
+  }
+  100%{
+    opacity:0;
+  }
+}
+@keyframes go7{
+  60%{
+    opacity: 0.7;
+  }
+  80%{
+    transform: rotate(360deg) scale(2);
+    left:10px;
+    top: 600px;
+    opacity: 0;
+  }
+  100%{
+    opacity:0;
+  }
+}
+
+@keyframes go8{
+  60%{
+    opacity: 0.7;
+  }
+  80%{
+    transform: rotate(360deg) scale(1);
+    right:500px;
+    top: 1200px;
+    opacity: 0;
+  }
+  100%{
+    opacity:0;
+  }
+}
+@keyframes go9{
+  60%{
+    opacity: 0.7;
+  }
+  80%{
+    transform: rotate(360deg) scale(2.5);
+    left:900px;
+    top: 500px;
+    opacity: 0;
+  }
+  100%{
+    opacity:0;
+  }
+}
+@keyframes go10{
+  60%{
+    opacity: 0.7;
+  }
+  80%{
+    transform: rotate(360deg) scale(3);
+    left:100px;
+    top: 1100px;
+    opacity: 0;
+  }
+  100%{
+    opacity:0;
+  }
+}
+@keyframes go11{
+  60%{
+    opacity: 0.7;
+  }
+  80%{
+    transform: rotate(360deg) scale(1.5);
+    left:700px;
+    top:1300px;
+    opacity: 0;
+  }
+  100%{
+    opacity:0;
+  }
+}
+@keyframes go12{
+  60%{
+    opacity: 0.7;
+  }
+  80%{
+    transform: rotate(360deg) scale(2);
+    left:700px;
+    top: 900px;
+    opacity: 0;
+  }
+  100%{
+    opacity:0;
+  }
+}
+span{
+  visibility:hidden;
+}
+    </style>
+  </head>
+  <body>
+  <div class="love">
+    <p>Please Click Me!</p>
+    <img class="lv1" id="lop" src="https://www.freeiconspng.com/uploads/love-png-5.png" alt="" onclick="lp()"/>
+    <p id="ilu">will.U.marry.Me?</p>
+  </div>
+  <div>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <!-- <div>
+    <img class="aniv" src="https://www.freeiconspng.com/uploads/love-png-26.png"/>
+  </div> -->
+<script>
+let love1 = document.getElementById('lop');
+let ilu = document.getElementById("ilu");
+let body = document.querySelector('body');
+let span = document.querySelectorAll('span');
+const kedip = setInterval(function(){
+  love1.classList.toggle('blink')
+},300)
+
+function lp(){
+  love1.classList.add("lv2");
+  love1.style='transition:1.2s';
+  setTimeout(function() {
+    ilu.style="opacity:1";
+    love1.style="opacity:1";
+  }, 1000);
+  clearInterval(kedip);
+span.forEach((e)=>{
+  e.style="visibility:visible"
+})
+}
+
+  </script>
+  </body>
+</html>
